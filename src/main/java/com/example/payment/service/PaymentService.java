@@ -9,6 +9,16 @@ public class PaymentService {
 
 
     public PaymentResponse payment(PaymentRequest paymentRequest) {
+        if(paymentRequest.getPayerAccount().equals("665566")){
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        if(paymentRequest.getPayerAccount().equals("6655669")){
+            throw new BusinessException("payer phone is wrong", HttpStatus.BAD_REQUEST);
+        }
         if(paymentRequest.getPayerPhone().length()!=11){
             throw new BusinessException("payer phone is wrong", HttpStatus.BAD_REQUEST);
         }else {

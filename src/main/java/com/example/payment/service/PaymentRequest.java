@@ -18,5 +18,4 @@ public class PaymentRequest {
     private double depositAmount;
     private String payNo;
 
-
 }

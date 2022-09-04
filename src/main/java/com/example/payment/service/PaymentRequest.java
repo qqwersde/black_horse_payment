@@ -16,6 +16,6 @@ public class PaymentRequest {
     private String payerAccount;
     private String payerName;
     private double depositAmount;
-    private String payNo;
+    private String transactionNo;
 
 }

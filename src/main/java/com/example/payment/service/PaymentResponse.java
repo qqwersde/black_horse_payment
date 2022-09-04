@@ -14,6 +14,6 @@ import lombok.Setter;
 public class PaymentResponse {
     private Integer code;
     private String msg;
-    private String payNo;
+    private String transactionNo;
     private String paymentId;
 }
